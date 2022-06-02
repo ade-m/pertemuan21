@@ -11,12 +11,22 @@ public class App {
 
         lingkaran lingkaran1 = new lingkaran();
 
-        System.out.print("Masukkan Panjang jari-jari (r) : ");
-        //terima masukan keyboard dari scanner ke r
-        lingkaran1.r= keyboard.nextInt();
-        //panggil luas lingkaran
-        lingkaran1.luasLingkaran();
-        
+       
+        String yn="";
+        do{
+            System.out.print("Masukkan Panjang jari-jari (r) : ");
+            //terima masukan keyboard dari scanner ke r
+            lingkaran1.r= keyboard.nextInt();
+            //panggil luas lingkaran
+            lingkaran1.luasLingkaran();
+
+            System.out.print("Apakah Anda ingin menghitung luas lingkaran lagi? (y/n)");
+           
+            yn = keyboard.next(); 
+            
+        }while(yn.equalsIgnoreCase("y"));
+
+        System.out.println("Terima Kasih");
     }
 
 }
