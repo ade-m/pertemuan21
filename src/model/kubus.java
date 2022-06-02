@@ -1,6 +1,6 @@
 package model;
 
-public class kubus {
+public class Kubus {
     public int s =0;
     public int hitungLuas(){
          //6 * s2 10 => 600  100 60000

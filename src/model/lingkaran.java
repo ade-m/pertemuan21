@@ -1,5 +1,5 @@
 package model;
-public class lingkaran {
+public class Lingkaran {
     public int r=10;
     public final double PI = 22.0/7;
     public void luasLingkaran(){
